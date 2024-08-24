@@ -1,7 +1,7 @@
 import { SelectedPage } from '@/shared/types';
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import image4 from "@/assets/image5.jpg";
+import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import Htext from '@/shared/Htext';
 
 type Props = {
@@ -28,7 +28,9 @@ const onSubmit = async (e: any) => {
 
 
   return (
-    <section id='contactus' className='mx-auto w-5/6 pt-24 pb-32'>
+    <section 
+    id='contactus' 
+    className='mx-auto w-5/6 pt-24 pb-32'>
         <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
         >
@@ -45,15 +47,24 @@ const onSubmit = async (e: any) => {
                 }} 
             >
                 <Htext>
-                    <span className="text-primary-500">Join Now</span> TO GET IN SHAPE
+                    <span 
+                    className="text-primary-500"
+                    >
+                        Join Now
+                    </span> 
+                TO GET IN SHAPE
                 </Htext>
-                <p className='my-5'>
+                <p 
+                className='my-5'
+                >
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ea.
                 </p>
             </motion.div>
 
             {/* forms and images */}
-            <div className='mt-10 justify-between gap-6 md:flex'>
+            <div 
+            className='mt-10 justify-between gap-6 md:flex'
+            >
                 <motion.div 
                 className='mt-10 basis-3/5'
                 initial="hidden"
@@ -81,7 +92,9 @@ const onSubmit = async (e: any) => {
                         })} 
                         />
                         {errors.name && (
-                            <p className='mt-1 text-primary-500'>
+                            <p 
+                            className='mt-1 text-primary-500'
+                            >
                                 {errors.name.type === "required" && "this field is required"}
                                 {errors.name.type === "maxLength" && "name must not be more that 100"}
                             </p>
@@ -97,7 +110,9 @@ const onSubmit = async (e: any) => {
                         })} 
                         />
                         {errors.email && (
-                            <p className='mt-1 text-primary-500'>
+                            <p 
+                            className='mt-1 text-primary-500'
+                            >
                                 {errors.email.type === "required" && "this field is required"}
                                 {errors.email.type === "pattern" && "email is not correct"}
                             </p>
@@ -114,7 +129,9 @@ const onSubmit = async (e: any) => {
                         })} 
                         />
                         {errors.message && (
-                            <p className='mt-1 text-primary-500'>
+                            <p 
+                            className='mt-1 text-primary-500'
+                            >
                                 {errors.message.type === "required" && "this field is required"}
                                 {errors.message.type === "maxLength" && "name must not be more that 2000"}
                             </p>
@@ -139,8 +156,13 @@ const onSubmit = async (e: any) => {
                     visible: { opacity: 1, y: 0}
                 }} 
                 >
-                    <div className='md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]'>
-                        <img alt='contact-us' src={image4} className='w-full' />
+                    <div 
+                    className='md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]'>
+                        <img 
+                        alt='contact-us' 
+                        src={ContactUsPageGraphic} 
+                        className='w-full' 
+                        />
                     </div>
                 </motion.div>
             </div>

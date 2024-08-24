@@ -1,9 +1,10 @@
 import { ClassType, SelectedPage } from '@/shared/types';
-import image1 from "@/assets/image1.jpg";
-import image2 from "@/assets/image2.jpg";
-import image3 from "@/assets/image3.jpg";
-import image4 from "@/assets/image4.jpg";
+import image1 from "@/assets/image1.png";
+import image2 from "@/assets/image2.png";
+import image3 from "@/assets/image3.png";
+import image4 from "@/assets/image4.png";
 import image5 from "@/assets/image5.jpg";
+import image6 from "@/assets/image6.png";
 import { motion } from "framer-motion";
 import Htext from '@/shared/Htext';
 import Class from './Class';
@@ -37,7 +38,7 @@ const classes: Array<ClassType> = [
     {
         name: "weight Traing classes",
         description: "lorem ipsum dolor sit amet con et just sed diam non pro pos reprehenderit in voluptate velit esse cillum dolore mag nunc sed",
-        image: image5,
+        image: image6,
     }
 ]
 
@@ -71,8 +72,13 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                     </p>
                 </div>
             </motion.div>
-            <div className='mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden'>
-                <ul className='w-[2800px] whitespace-nowrap'>
+            <div 
+            className='mt-10 h-[353px] w-full 
+            overflow-x-auto overflow-y-hidden'
+            >
+                <ul 
+                className='w-[2800px] whitespace-nowrap'
+                >
                     {classes.map((item: ClassType, index) => (
                         <Class 
                         key={`${item.name}-${index}`}

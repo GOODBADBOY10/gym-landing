@@ -4,7 +4,7 @@ import { AcademicCapIcon, HomeModernIcon, UserGroupIcon } from "@heroicons/react
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
-import OurClass from "@/assets/OurClass.jpg";
+import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 
 const benefits: Array<BenefitType> = [
     {
@@ -81,15 +81,24 @@ const Benefits = ({ setSelectedPage }: Props) => {
             </motion.div>
 
             {/* graphics and description */}
-            <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+            <div 
+            className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex"
+            >
                 {/* graphic */}
-                <img alt='benefits-page-graphic' src={OurClass} className="mx-auto" />
+                <img 
+                alt='benefits-page-graphic' 
+                src={BenefitsPageGraphic} 
+                className="mx-auto" 
+                />
 
                 {/* description */}
                 <div>
                     {/* title */}
-                    <div className="relative">
-                        <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                    <div 
+                    className="relative">
+                        <div 
+                        className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves"
+                        >
                             <motion.div
                             initial="hidden"
                             whileInView="visible"
