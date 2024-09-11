@@ -56,7 +56,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     </div>
 
                     <p 
-                    className="mt-8 text-sm">lowihwgcjfbvcjhaklfjlhkjsahkjvnakjfhkjsabhfbdjvnkjehbvbdjavncbjhdsbvkjdbfjnsd</p>
+                    className="mt-8 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem at dolor nesciunt aspernatur voluptatum aperiam earum rerum deleniti nemo aliquid.</p>
                 </motion.div>
 
                 {/* Actions */}

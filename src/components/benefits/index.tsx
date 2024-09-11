@@ -14,12 +14,12 @@ const benefits: Array<BenefitType> = [
     },
     {
         icon: <UserGroupIcon className="h-6 w-6" />,
-        title: "State of the art facilities",
+        title: "States of the art facilities",
         description: "lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
         icon: <AcademicCapIcon className="h-6 w-6" />,
-        title: "State of the art facilities",
+        title: "Home of the art facilities",
         description: "lorem ipsum dolor sit amet, consectetur adipiscing",
     }
 ];
