@@ -4,7 +4,6 @@ import { AcademicCapIcon, HomeModernIcon, UserGroupIcon } from "@heroicons/react
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 
 const benefits: Array<BenefitType> = [
     {
@@ -87,7 +86,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 {/* graphic */}
                 <img 
                 alt='benefits-page-graphic' 
-                src={BenefitsPageGraphic} 
+                src="./BenefitsPageGraphic.png" 
                 className="mx-auto" 
                 />
 

@@ -1,4 +1,3 @@
-import Logo from "@/assets/Logo.png";
 
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
             className='mt-16 basis-1/2 md:mt-0'
             >
                 <img 
-                src={Logo} 
+                src="./Logo.png" 
                 alt='footer-logo' 
                 />
                 <p 

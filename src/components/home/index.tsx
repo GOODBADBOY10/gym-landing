@@ -1,11 +1,6 @@
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png"
-import SponsorForbes from "@/assets/SponsorForbes.png"
-import SponsorFortune from "@/assets/SponsorFortune.png"
-import SponsorRedBull from "@/assets/SponsorRedBull.png"
-import HomePageGraphic from "@/assets/HomeGraphic.jpg"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -50,7 +45,7 @@ const Home = ({ setSelectedPage }: Props) => {
                         >
                             <img 
                             alt='home page text' 
-                            src={HomePageText} 
+                            src="./HomePageText.png" 
                             />
                         </div>
                     </div>
@@ -91,7 +86,7 @@ const Home = ({ setSelectedPage }: Props) => {
             >
                 <img 
                 alt="home-page-graphic" 
-                src={HomePageGraphic} 
+                src="./HomeGraphic.jpg"
                 />
             </div>
         </motion.div>
@@ -109,15 +104,15 @@ const Home = ({ setSelectedPage }: Props) => {
                     >
                         <img 
                         alt="red-bull-sponsor" 
-                        src={SponsorForbes} 
+                        src="./SponsorForbes.png" 
                         />
                         <img 
                         alt="forbes-sponsor" 
-                        src={SponsorFortune} 
+                        src="./SponsorFortune.png" 
                         />
                         <img 
                         alt="fortune-sponsor" 
-                        src={SponsorRedBull} 
+                        src="./SponsorRedBull.png"  
                         />
                     </div>
                 </div>

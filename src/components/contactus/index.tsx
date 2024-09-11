@@ -1,7 +1,6 @@
 import { SelectedPage } from '@/shared/types';
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import Htext from '@/shared/Htext';
 
 type Props = {
@@ -160,7 +159,7 @@ const onSubmit = async (e: any) => {
                     className='md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]'>
                         <img 
                         alt='contact-us' 
-                        src={ContactUsPageGraphic} 
+                        src="./ContactUsPageGraphic.png" 
                         className='w-full' 
                         />
                     </div>
